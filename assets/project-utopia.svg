@@ -1,0 +1,42 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0096C7"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgGrad2)"/>
+
+  <!-- Server stack -->
+  <g transform="translate(80,90)">
+    <rect x="0" y="0" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
+    <circle cx="25" cy="27" r="6" fill="#48CAE4"/>
+    <rect x="45" y="20" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
+
+    <rect x="0" y="70" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
+    <circle cx="25" cy="97" r="6" fill="#0096C7"/>
+    <rect x="45" y="90" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
+
+    <rect x="0" y="140" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
+    <circle cx="25" cy="167" r="6" fill="#48CAE4"/>
+    <rect x="45" y="160" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
+  </g>
+
+  <!-- Database cylinder -->
+  <g transform="translate(480,90)">
+    <ellipse cx="90" cy="20" rx="90" ry="24" fill="rgba(255,255,255,0.12)" stroke="#ffffff" stroke-width="2"/>
+    <path d="M0 20 V150 C0 164 40 176 90 176 C140 176 180 164 180 150 V20" fill="rgba(255,255,255,0.06)" stroke="#ffffff" stroke-width="2"/>
+    <ellipse cx="90" cy="80" rx="90" ry="24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <ellipse cx="90" cy="130" rx="90" ry="24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Connecting lines with lock icon (JWT/auth) -->
+  <line x1="340" y1="140" x2="480" y2="140" stroke="#48CAE4" stroke-width="2" stroke-dasharray="6 6"/>
+  <g transform="translate(390,270)">
+    <rect x="0" y="20" width="60" height="45" rx="6" fill="rgba(255,255,255,0.1)" stroke="#ffffff" stroke-width="2"/>
+    <path d="M12 20 V8 a18 18 0 0 1 36 0 V20" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="30" cy="42" r="6" fill="#48CAE4"/>
+  </g>
+
+  <text x="80" y="400" font-family="'Space Grotesk', sans-serif" font-size="22" fill="#ffffff" font-weight="600">Node.js · Express · MongoDB · JWT</text>
+</svg>

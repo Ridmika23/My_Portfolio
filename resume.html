@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ridmika Ekanayaka</title>
+    <meta name="description" content="Resume of Ridmika Ekanayaka, Software Engineering Student">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#experience">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="resume-main">
+        <div class="resume-container">
+            <!-- Left Side Details -->
+            <div class="resume-details fade-in">
+                <h1 class="resume-title">Resume of <br><span class="highlight">Ridmika Ekanayaka</span></h1>
+                
+                <p class="resume-description">
+                    Software Engineering student focused on building reliable and user-friendly software through careful testing, clear communication, and collaborative project work.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-card glass-card">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Software Engineering Student</span>
+                    </div>
+                    <div class="info-card glass-card">
+                        <span class="info-label">Location</span>
+                        <span class="info-value">Sri Lanka</span>
+                    </div>
+                    <div class="info-card glass-card">
+                        <span class="info-label">Stack</span>
+                        <span class="info-value">Java • Python • JS • Node.js</span>
+                    </div>
+                    <div class="info-card glass-card">
+                        <span class="info-label">Availability</span>
+                        <span class="info-value">Internships</span>
+                    </div>
+                </div>
+
+                <div class="file-card glass-card">
+                    <div class="file-info">
+                        <i class="fa-solid fa-file-pdf file-icon"></i>
+                        <div>
+                            <h4 class="file-name">Ridmika Ekanayaka Resume</h4>
+                            <p class="file-meta">cv.pdf • Last Updated: 2026</p>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="cv.pdf" download class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="cv.pdf" target="_blank" class="btn btn-secondary btn-full">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open File
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side PDF Preview -->
+            <div class="resume-preview glass-card fade-in" style="animation-delay: 0.2s;">
+                <div class="preview-header">
+                    <div class="window-controls">
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control green"></span>
+                    </div>
+                    <span class="preview-title">Resume Preview</span>
+                    <a href="cv.pdf" target="_blank" class="preview-link">Open full screen</a>
+                </div>
+                <div class="preview-content">
+                    <iframe src="cv.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.fade-in');
+            setTimeout(() => {
+                animateElements.forEach(el => el.classList.add('visible'));
+            }, 100);
+        });
+    </script>
+</body>
+</html>
