@@ -1,42 +1,51 @@
 <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0096C7"/>
-      <stop offset="100%" stop-color="#050505"/>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0096C7"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="450" fill="url(#bgGrad2)"/>
+  <rect width="800" height="450" fill="url(#bg2)"/>
 
-  <!-- Server stack -->
-  <g transform="translate(80,90)">
-    <rect x="0" y="0" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
-    <circle cx="25" cy="27" r="6" fill="#48CAE4"/>
-    <rect x="45" y="20" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
-
-    <rect x="0" y="70" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
-    <circle cx="25" cy="97" r="6" fill="#0096C7"/>
-    <rect x="45" y="90" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
-
-    <rect x="0" y="140" width="260" height="55" rx="8" fill="rgba(255,255,255,0.08)" stroke="#48CAE4" stroke-width="1.5"/>
-    <circle cx="25" cy="167" r="6" fill="#48CAE4"/>
-    <rect x="45" y="160" width="180" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
   </g>
 
-  <!-- Database cylinder -->
+  <!-- Server stack left -->
+  <g transform="translate(70,110)">
+    <rect x="0" y="0" width="280" height="60" rx="10" fill="rgba(255,255,255,0.1)" stroke="#90E0EF" stroke-width="2"/>
+    <circle cx="28" cy="30" r="7" fill="#90E0EF"/>
+    <rect x="50" y="22" width="200" height="16" rx="4" fill="rgba(255,255,255,0.3)"/>
+
+    <rect x="0" y="76" width="280" height="60" rx="10" fill="rgba(255,255,255,0.1)" stroke="#90E0EF" stroke-width="2"/>
+    <circle cx="28" cy="106" r="7" fill="#48CAE4"/>
+    <rect x="50" y="98" width="200" height="16" rx="4" fill="rgba(255,255,255,0.3)"/>
+
+    <rect x="0" y="152" width="280" height="60" rx="10" fill="rgba(255,255,255,0.1)" stroke="#90E0EF" stroke-width="2"/>
+    <circle cx="28" cy="182" r="7" fill="#90E0EF"/>
+    <rect x="50" y="174" width="200" height="16" rx="4" fill="rgba(255,255,255,0.3)"/>
+  </g>
+
+  <!-- Database cylinder right -->
   <g transform="translate(480,90)">
-    <ellipse cx="90" cy="20" rx="90" ry="24" fill="rgba(255,255,255,0.12)" stroke="#ffffff" stroke-width="2"/>
-    <path d="M0 20 V150 C0 164 40 176 90 176 C140 176 180 164 180 150 V20" fill="rgba(255,255,255,0.06)" stroke="#ffffff" stroke-width="2"/>
-    <ellipse cx="90" cy="80" rx="90" ry="24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-    <ellipse cx="90" cy="130" rx="90" ry="24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <ellipse cx="110" cy="25" rx="110" ry="30" fill="rgba(255,255,255,0.15)" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M0 25 V185 C0 202 49 216 110 216 C171 216 220 202 220 185 V25" fill="rgba(255,255,255,0.08)" stroke="#ffffff" stroke-width="2.5"/>
+    <ellipse cx="110" cy="100" rx="110" ry="30" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+    <ellipse cx="110" cy="160" rx="110" ry="30" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
   </g>
 
-  <!-- Connecting lines with lock icon (JWT/auth) -->
-  <line x1="340" y1="140" x2="480" y2="140" stroke="#48CAE4" stroke-width="2" stroke-dasharray="6 6"/>
-  <g transform="translate(390,270)">
-    <rect x="0" y="20" width="60" height="45" rx="6" fill="rgba(255,255,255,0.1)" stroke="#ffffff" stroke-width="2"/>
-    <path d="M12 20 V8 a18 18 0 0 1 36 0 V20" fill="none" stroke="#ffffff" stroke-width="4"/>
-    <circle cx="30" cy="42" r="6" fill="#48CAE4"/>
+  <!-- Connection line -->
+  <line x1="350" y1="180" x2="480" y2="180" stroke="#90E0EF" stroke-width="3" stroke-dasharray="8 8"/>
+
+  <!-- Lock icon (JWT auth) -->
+  <g transform="translate(370,300)">
+    <rect x="0" y="26" width="70" height="52" rx="8" fill="rgba(255,255,255,0.15)" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M14 26 V10 a21 21 0 0 1 42 0 V26" fill="none" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="35" cy="50" r="7" fill="#90E0EF"/>
   </g>
 
-  <text x="80" y="400" font-family="'Space Grotesk', sans-serif" font-size="22" fill="#ffffff" font-weight="600">Node.js · Express · MongoDB · JWT</text>
+  <!-- Label chip -->
+  <rect x="60" y="380" width="340" height="46" rx="23" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <text x="230" y="409" font-family="'Space Grotesk', sans-serif" font-size="20" fill="#ffffff" font-weight="700" text-anchor="middle">Node.js · Express · MongoDB</text>
 </svg>
