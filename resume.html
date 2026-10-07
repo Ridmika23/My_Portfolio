@@ -62,18 +62,36 @@
 
                 <div class="file-card glass-card">
                     <div class="file-info">
-                        <i class="fa-solid fa-file-pdf file-icon"></i>
+                        <i class="fa-solid fa-file-pdf file-icon" style="color: #60a5fa;"></i>
                         <div>
-                            <h4 class="file-name">Ridmika Ekanayaka Resume</h4>
-                            <p class="file-meta">cv.pdf • Last Updated: 2026</p>
+                            <h4 class="file-name">Data Analyst Resume</h4>
+                            <p class="file-meta">Ridmika_Ekanayaka_DA_CV.pdf • Last Updated: 2026</p>
                         </div>
                     </div>
                     <div class="file-actions">
-                        <a href="cv.pdf" download class="btn btn-primary btn-full">
-                            <i class="fa-solid fa-download"></i> Download Resume
+                        <button onclick="changePreview('Ridmika_Ekanayaka_DA_CV.pdf')" class="btn btn-secondary btn-full">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </button>
+                        <a href="Ridmika_Ekanayaka_DA_CV.pdf" download class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-download"></i> Download
                         </a>
-                        <a href="cv.pdf" target="_blank" class="btn btn-secondary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open File
+                    </div>
+                </div>
+
+                <div class="file-card glass-card" style="margin-top: 15px;">
+                    <div class="file-info">
+                        <i class="fa-solid fa-file-pdf file-icon" style="color: #f472b6;"></i>
+                        <div>
+                            <h4 class="file-name">QA Engineer Resume</h4>
+                            <p class="file-meta">Ridmika_Ekanayaka_QA_CV.pdf • Last Updated: 2026</p>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button onclick="changePreview('Ridmika_Ekanayaka_QA_CV.pdf')" class="btn btn-secondary btn-full">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </button>
+                        <a href="Ridmika_Ekanayaka_QA_CV.pdf" download class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-download"></i> Download
                         </a>
                     </div>
                 </div>
@@ -88,10 +106,10 @@
                         <span class="control green"></span>
                     </div>
                     <span class="preview-title">Resume Preview</span>
-                    <a href="cv.pdf" target="_blank" class="preview-link">Open full screen</a>
+                    <a href="Ridmika_Ekanayaka_DA_CV.pdf" target="_blank" class="preview-link" id="full-screen-link">Open full screen</a>
                 </div>
                 <div class="preview-content">
-                    <iframe src="cv.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" frameborder="0"></iframe>
+                    <iframe id="resume-frame" src="Ridmika_Ekanayaka_DA_CV.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -104,6 +122,11 @@
                 animateElements.forEach(el => el.classList.add('visible'));
             }, 100);
         });
+
+        function changePreview(pdfFile) {
+            document.getElementById('resume-frame').src = pdfFile + '#toolbar=0&navpanes=0&scrollbar=0';
+            document.getElementById('full-screen-link').href = pdfFile;
+        }
     </script>
 </body>
 </html>
